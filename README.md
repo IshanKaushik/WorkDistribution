@@ -4,7 +4,7 @@ Description : Work distribution for provided agents with given skills
 
 This project is built with Spring boot 2 framework. It utilies fat jar depoyement with nested Tomcat server and H2 database
 
-Exposed are 3 API endpoints :
+Exposed are 3 API endpoints:
 1. http://localhost:8098/task-service/api/task/add
 
     This enpoint adds the new task with given priority ("low"/"high") and skills ("skill1", "skill2" and "skill3)
@@ -22,13 +22,13 @@ Start project with pre-compiled JAR file:
 Due to reduced size limit I have uploaded JAR file at following location : 
 https://drive.google.com/file/d/1uvkAKNw3kBIWOYr3bwCZgoO3uFXROaEA/view?usp=sharing
 Step to follow :
-1. Download jar file on your windows
-2. Open command promt in admin mode and navigate to the downloaded jar file folder
-3. Execute command : java -jar taskservice.jar (assuming java is available on your system)
+    1. Download jar file on your windows
+    2. Open command promt in admin mode and navigate to the downloaded jar file folder
+    3. Execute command : java -jar taskservice.jar (assuming java is available on your system)
 
 Compile and start the project :
-Import project in eclipse and run the application as Java project.
+    Import project in eclipse and run the application as Java project.
 
 
 Unit testing via postman :
-Collection included
+    Collection is provided for all 3 endpoints. Import it in postman tool and execute.
