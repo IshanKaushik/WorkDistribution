@@ -2,7 +2,9 @@
 Description : Work distribution for provided agents with given skills
 
 
-This project is built with Spring boot 2 framework. Exposed are 3 API endpoints :
+This project is built with Spring boot 2 framework. It utilies fat jar depoyement with nested Tomcat server and H2 database
+
+Exposed are 3 API endpoints :
 1. http://localhost:8098/task-service/api/task/add
 
     This enpoint adds the new task with given priority ("low"/"high") and skills ("skill1", "skill2" and "skill3)
@@ -17,6 +19,8 @@ This project is built with Spring boot 2 framework. Exposed are 3 API endpoints 
    This endpoint will display all ongoing and pending task in queue
 
 To start the project :
+Import project in eclipse and run the application as Java project.
 
 
 Unit testing via postman :
+Collection included
