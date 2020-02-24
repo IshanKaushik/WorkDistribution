@@ -1,0 +1,98 @@
+{
+	"info": {
+		"name": "Work Distribution",
+		"_postman_id": "23cca138-9323-303c-b41d-52fc28b7d4cd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"priority\" : \"low\",\n   \"skills\" :[\"skill1\",\"skill3\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8098/task-service/api/task/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8098",
+					"path": [
+						"task-service",
+						"api",
+						"task",
+						"add"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8098/task-service/api/task/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8098",
+					"path": [
+						"task-service",
+						"api",
+						"task",
+						"update"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8098/task-service/api/task/view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8098",
+					"path": [
+						"task-service",
+						"api",
+						"task",
+						"view"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
